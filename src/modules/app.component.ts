@@ -3,6 +3,7 @@ import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/mergeMap';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'body',
@@ -17,7 +18,8 @@ export class AppComponent implements OnInit {
 
   public constructor(private router: Router,
                      private activatedRoute: ActivatedRoute,
-                     private renderer: Renderer2) {
+                     private renderer: Renderer2,
+                     private translateService: TranslateService) {
 
   }
 
@@ -29,6 +31,9 @@ export class AppComponent implements OnInit {
   * Called when component is being initiated.
   * */
   public ngOnInit(): void {
+
+    // Set default language to en-US.
+    this.translateService.setDefaultLang('en-US');
 
     // Register to router events to set application layout.
     this.router.events

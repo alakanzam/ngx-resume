@@ -39,7 +39,7 @@ export class TechnicalSkillComponent implements OnInit {
     // Get technical skill.
     this.activatedRoute.data
       .subscribe((data: any) => {
-        this.technicalSkills = data.technicalSkills;
+        this.technicalSkills = <Skill[]> data.technicalSkills;
       });
   }
 
@@ -51,7 +51,7 @@ export class TechnicalSkillComponent implements OnInit {
     if (70 <= iValue)
       return 'success';
 
-    if (49 < iValue < 70)
+    if (49 < iValue && iValue < 70)
       return 'warning';
 
     return 'danger';

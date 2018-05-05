@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {RouterModule, Routes} from "@angular/router";
+import {TranslateModule} from '@ngx-translate/core';
 
 //#region Properties
 
@@ -33,7 +34,8 @@ export const routes: Routes = [
     AppComponent
   ],
   imports: [
-    RouterModule.forRoot(routes, {enableTracing: false})
+    RouterModule.forRoot(routes, {enableTracing: false}),
+    TranslateModule
   ],
   exports:[
     RouterModule

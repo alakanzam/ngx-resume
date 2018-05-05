@@ -1,5 +1,5 @@
 import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import {NgModule, OnInit} from '@angular/core';
 import {AppComponent} from './app.component';
 import {IsAuthorizedGuard} from '../guards/is-authorized-guard';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -12,7 +12,9 @@ import {AuthenticationService} from '../services/authentication.service';
 import {AppSettings} from '../constants/app-settings.constant';
 import {AccountService} from '../services/account.service';
 import {MomentModule} from 'ngx-moment';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {HttpLoaderFactory} from '../interceptors/http-loader.factory';
 
 //#region Module declaration
 
@@ -25,9 +27,17 @@ import {HttpClientModule} from '@angular/common/http';
     ToastrModule.forRoot(), // ToastrModule added
     MomentModule,
     HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    }),
 
     SharedModule,
-    AppRouteModule
+    AppRouteModule,
+
 
   ],
   providers: [
@@ -39,6 +49,7 @@ import {HttpClientModule} from '@angular/common/http';
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule {
 }
 

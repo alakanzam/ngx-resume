@@ -10,6 +10,7 @@ import {HobbyResolve} from '../../resolves/hobby.resolve';
 import {SkillResolve} from '../../resolves/skill.resolve';
 import {TechnicalSkillComponent} from './technical-skill/technical-skill.component';
 import {ProgressbarModule} from 'ngx-bootstrap';
+import {TranslateModule} from '@ngx-translate/core';
 
 //#region Module declaration
 
@@ -19,7 +20,8 @@ import {ProgressbarModule} from 'ngx-bootstrap';
     FormsModule,
     SharedModule,
     PersonalRouteModule,
-    ProgressbarModule.forRoot()
+    ProgressbarModule.forRoot(),
+    TranslateModule
   ],
   declarations: [
     PersonalComponent,
