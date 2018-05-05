@@ -52,8 +52,8 @@ export class LoginComponent {
     authorizationToken.lifeTime = 3600;
     this.authenticationService.setAuthorization(authorizationToken);
 
-    // Redirect to dashboard.
-    this.router.navigate(['/dashboard']);
+    // Redirect to personal.
+    this.router.navigate(['/personal']);
   }
 
   //#endregion

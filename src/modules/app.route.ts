@@ -12,11 +12,11 @@ export const routes: Routes = [
       {
         path: '',
         pathMatch: 'full',
-        redirectTo: '/dashboard'
+        redirectTo: '/personal'
       },
       {
-        path: 'dashboard',
-        loadChildren: 'modules/dashboard/dashboard.module#DashboardModule',
+        path: 'personal',
+        loadChildren: 'modules/personal/personal.module#PersonalModule',
       },
       {
         path: 'login',

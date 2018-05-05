@@ -1,0 +1,24 @@
+{
+  "hobbies": [
+    {
+      "name": "PLAY_COMPUTER_GAMES",
+      "description": "PLAY_COMPUTER_GAMES_DESCRIPTION"
+    },
+    {
+      "name": "LEARN_PROGRAMMING",
+      "description": "LEARN_PROGRAMMING_DESCRIPTION"
+    },
+    {
+      "name": "LISTENING_TO_MUSIC",
+      "description": "LISTENING_TO_MUSIC_DESCRIPTION"
+    },
+    {
+      "name": "READING",
+      "description": "READING_DESCRIPTION"
+    },
+    {
+      "name": "WATCHING_MOVIE",
+      "description": "WATCHING_MOVIE_DESCRIPTION"
+    }
+  ]
+}

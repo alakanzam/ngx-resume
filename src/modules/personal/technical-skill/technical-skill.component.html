@@ -1,0 +1,43 @@
+<div class="row"
+     *ngFor="let technicalSkill of technicalSkills">
+
+  <div class="col-lg-12">
+    <div class="box box-default">
+      <div class="box-header">
+        <h3 class="box-title">{{technicalSkill.name}}</h3>
+      </div>
+      <div class="box-body">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="form-group">
+              <img class="img img-thumbnail img-responsive"
+                   [src]="technicalSkill.image">
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <div *ngFor="let item of technicalSkill.items">
+              <div class="row">
+                <div class="col-lg-12"></div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <progressbar max="100"
+                                 [value]="item.value"
+                                 type="{{fnGetProgressBarType(item.value)}}"
+                                 [striped]="true"
+                                 [animate]="true">
+                      <i>{{item.name}}</i>
+                    </progressbar>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

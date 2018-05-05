@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col-lg-12">
+
+    <!--About myself-->
+    <div class="box box-default">
+      <div class="box-header">
+        <h3 class="box-title">TITLE_TALK_ABOUT_MYSELF</h3>
+      </div>
+      <div class="box-body">
+        <ul>
+          <li *ngFor="let paragraph of aboutMe.paragraphs"
+              class="alert alert-info">
+            {{paragraph}}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="box box-info">
+      <div class="box-header">
+        <h3 class="box-title">TITLE_TALK_ABOUT_HOBBIES</h3>
+      </div>
+      <div class="box-body">
+        <div *ngFor="let hobby of hobbies">
+          <!--Hobby name-->
+          <div class="row">
+            <div class="col-lg-12">
+              <b class="fa fa-star text-danger"></b> <label>{{hobby.name}}</label>
+            </div>
+          </div>
+
+          <!--Hobby description-->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="form-group">
+                {{hobby.description}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,7 +1,7 @@
 import {Component, Inject, Input} from '@angular/core';
 import {Router} from "@angular/router";
-import {IAuthenticationService} from "../../interfaces/services/authentication-service.interface";
-import {ProfileViewModel} from "../../view-models/profile.view-model";
+import {IAuthenticationService} from '../../../interfaces/services/authentication-service.interface';
+import {ProfileViewModel} from '../../../view-models/profile.view-model';
 
 @Component({
   selector: 'navigation-bar',

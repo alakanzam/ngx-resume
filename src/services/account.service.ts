@@ -1,8 +1,11 @@
-import {IAccountService} from "../interfaces/services/account-service.interface";
-import {Injectable} from "@angular/core";
-import {HttpClient} from "@angular/common/http";
-import {ProfileViewModel} from "../view-models/profile.view-model";
-import {Observable} from "rxjs/Observable";
+import {IAccountService} from '../interfaces/services/account-service.interface';
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs/Observable';
+import {AboutMe} from '../models/about-me';
+import {ApiUrlConstant} from '../constants/api-url.constant';
+import {Hobby} from '../models/hobby';
+import {Skill} from '../models/skill';
 
 @Injectable()
 export class AccountService implements IAccountService {
@@ -12,7 +15,7 @@ export class AccountService implements IAccountService {
   /*
   * Initiate service with injectors.
   * */
-  public constructor(private http: HttpClient) {
+  public constructor(private httpClient: HttpClient) {
 
   }
 
@@ -21,24 +24,37 @@ export class AccountService implements IAccountService {
   //#region Methods
 
   /*
-  * Get profile information.
+  * Get about me information.
   * */
-  public getProfile(): Observable<ProfileViewModel> {
-    let url = '/assets/user.json';
-    return Observable.create(observer => {
-      let profile = new ProfileViewModel();
-      profile.email = 'Email 01';
-      profile.joinedTime = 0;
-      profile.nickname = 'Nick name 01';
-      profile.photoRelativeUrl = 'https://upload.wikimedia.org/wikipedia/commons/f/f4/User_Avatar_2.png';
-      observer.next(profile);
-    });
-    //
-    // return this.http.get(url)
-    //   .map((x: Response) => {
-    //     console.log(x);
-    //     return <ProfileViewModel> x.body;
-    //   });
+  getAboutMe(): Observable<AboutMe> {
+    let fullUrl = `${ApiUrlConstant.endPoint}/${ApiUrlConstant.getAboutMe}`;
+    return this.httpClient.get(fullUrl)
+      .map((aboutMe) => {
+        return <AboutMe> aboutMe;
+      });
+  }
+
+  /*
+  * Get user hobbies.
+  * */
+  getHobbies(): Observable<Hobby[]> {
+    let fullUrl = `${ApiUrlConstant.endPoint}/${ApiUrlConstant.getHobbies}`;
+    return this.httpClient.get(fullUrl)
+      .map((x: any) => {
+        return <Hobby[]> x.hobbies;
+      });
+  }
+
+  /*
+  * Get user skills.
+  * */
+  getSkills(): Observable<Skill[]> {
+    let fullUrl = `${ApiUrlConstant.endPoint}/${ApiUrlConstant.getSkills}`;
+    return this.httpClient.get(fullUrl)
+      .map((x: any) => {
+        return <Skill[]> x.skills;
+      });
+
   }
 
   //#endregion

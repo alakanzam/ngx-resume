@@ -1,0 +1,30 @@
+<div class="col-md-3">
+  <div class="form-group">
+    <img [src]="aboutMe.photo"
+         class="img img-thumbnail img-responsive">
+  </div>
+
+  <div class="form-group">
+    <table class="table table-responsive table-condensed">
+      <tbody>
+      <tr>
+        <td class="text-center">
+          <b>{{aboutMe.fullName}}</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center">
+          <small>
+            <a href="javascript:void(0);">{{aboutMe.role}}</a>
+          </small>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="col-md-9">
+  <router-outlet></router-outlet>
+</div>
+
