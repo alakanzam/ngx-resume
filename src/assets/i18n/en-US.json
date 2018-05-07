@@ -17,5 +17,10 @@
   "LEARN_PROGRAMMING_DESCRIPTION": "<p>At the moment, I'm focusing on <strong>C#</strong> and <strong>Javascript</strong>. I want to know them deeper and deeper, use their advantages and frameworks to make my work easier.</p>",
   "LISTENING_TO_MUSIC_DESCRIPTION": "<p>Music is my first choice when I have to work for a long time. My performance at work will be better with an instrumental music playlist.</p>",
   "READING_DESCRIPTION": "<p>Most of my time is for programming, but it doesn't mean I don't like reading. I love light novels and novels, such as: Harry Potter, Vietnamese short stories, ...</p>",
-  "WATCHING_MOVIE_DESCRIPTION": "<p>As I said, I was a game developer before, just because I liked computer games and guns. Therefore, if anyone invites me to go to cinema, I would like to choose action movies or movies about modern warfare: The Pacific, Act of Valor, ...</p>"
+  "WATCHING_MOVIE_DESCRIPTION": "<p>As I said, I was a game developer before, just because I liked computer games and guns. Therefore, if anyone invites me to go to cinema, I would like to choose action movies or movies about modern warfare: The Pacific, Act of Valor, ...</p>",
+  "SKILL_DATABASE": "Database skill",
+  "SKILL_PROGRAMMING_LANGUAGE": "Programming language skill",
+  "SKILL_BACKEND_FRAMEWORK_TOOL": "Back-end frameworks & tools skill",
+  "SKILL_FRONTEND_FRAMEWORK_TOOL": "Front-end frameworks & tools tool",
+  "SKILL_SOURCE_VERSION_CONTROL": "Source version control skill"
 }
