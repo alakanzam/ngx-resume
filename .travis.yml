@@ -14,7 +14,7 @@ install:
 script:
 - ng build
 
-after_success:
+before_deploy:
 - cd "dist"
 
 # Deployment phrase
