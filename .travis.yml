@@ -12,7 +12,7 @@ install:
 
 # Build phrase
 script:
-- npm run build
+- ng build
 
 # Deployment phrase
 deploy:
@@ -20,3 +20,5 @@ deploy:
   token:
     secure: "CQgX84XMPYeQlUbYZn45m6EJnTTS8EVlvyc8edGXr8n0Tw7xtCD78hp/TMu4WEquVyNM7eBO/vDsbKdXP8abn3CsO4bJsTWFCAxHmttO3Pj3PtcpC2FpcMF16SBW0K7y5zU6UIlnYE2ZiyVrc+XeSKPuEhjMaBSXWc0BWSdHVa5bJKUq9lz1ZAMqWPf7h29LfGiXKsf4i6yEpiX3G87VUNlxKYViRoUQbKlOuBJzQb0Ii989EqI21iW653IRkH0i4YmpYP6JUMOfGkqyUvXVlI6cb2clGmMHNBD60LWuQt8MUIKKP0poH9Gkf9hODm/g/3F0Y0G8YTLamlpb8RMWaElESaY+373QmVGo8Jnzji6qVmSoJ4maKF1+HPx4F901PoYKj42JUbXYe3bdzKc2AYqxNlwz4YbgZP4CaPGB46mwEd6cCBl3snMFaQDXrB+xqMv5IX2vYAqurmZaM3IXvUw23f5yojxWJXtrQWmAXa44I+1uyHsDqfxz4p7/jRQ4Xbyi7G7EjQSnXSBfpsk6ANSTeMdpKJorxb+BD488oL+Wua9CcTufLlDiPXMlmX7f2bJXEw+h4nfywHwb3v3HPGoRUSyaYrIz9fNmb7eOksaQd2kn0SuM89J2yjae0Owc4RMLTG1XqivP381fa2VTNvwX66F6uiPSmhEoTe0DIcU="
   project: "ngx-resume"
+  on: 
+   branch: "angular.5-migration"
