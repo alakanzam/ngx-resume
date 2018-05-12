@@ -11,6 +11,7 @@ import {SkillResolve} from '../../resolves/skill.resolve';
 import {TechnicalSkillComponent} from './technical-skill/technical-skill.component';
 import {ProgressbarModule} from 'ngx-bootstrap';
 import {TranslateModule} from '@ngx-translate/core';
+import {ProjectComponent} from './project/project.component';
 
 //#region Module declaration
 
@@ -26,12 +27,14 @@ import {TranslateModule} from '@ngx-translate/core';
   declarations: [
     PersonalComponent,
     AboutMeComponent,
-    TechnicalSkillComponent
+    TechnicalSkillComponent,
+    ProjectComponent
   ],
   exports: [
     PersonalComponent,
     AboutMeComponent,
-    TechnicalSkillComponent
+    TechnicalSkillComponent,
+    ProjectComponent
   ],
   providers: [
     AboutMeResolve,

@@ -1,13 +1,231 @@
 {
-  "items":[
+  "projects": [
     {
-      "from": "",
-      "to":"",
-      "items":[
-        {
-          "place": "",
-          "position": ""
-        }
+      "name": "VINCI",
+      "time": {
+        "from": 1504195200000,
+        "to": 1494518400000
+      },
+      "company": "FPT Software & Petronas",
+      "description": "TITLE_VINCI_DESCRIPTION",
+      "roles": [
+        "ROLE_DEVELOPER"
+      ],
+      "responsibilities": [
+        "Be a back-end & front-end developer.",
+        "Instruct team members to follow project technology.",
+        "Create back-end & front-end project structure.",
+        "Meet customers, verify requirements, define project solution."
+      ],
+      "technologies": [
+        "TITLE_ASP_NET_WEB_API_2",
+        "TITLE_ENTITY_FRAMEWORK",
+        "TITLE_ANGULAR_JS",
+        "TITLE_WEBPACK"
+      ]
+    },
+    {
+      "name": "POINT",
+      "time": {
+        "from": 1496246400000,
+        "to": 1504195200000
+      },
+      "company": "FPT Software & Petronas",
+      "description": "TITLE_POINT_DESCRIPTION",
+      "roles": [
+        "ROLE_DEVELOPER"
+      ],
+      "responsibilities": [
+        "Be a back-end & front-end developer.",
+        "Instruct team members to follow project technology.",
+        "Create back-end & front-end project structure."
+      ],
+      "technologies": [
+        "TITLE_WEB_API_2",
+        "TITLE_ENTITY_FRAMEWORK",
+        "TITLE_ANGULAR_JS"
+      ]
+    },
+    {
+      "name": "Immersive",
+      "time": {
+        "from": 1490976000000,
+        "to": 1493568000000
+      },
+      "company": "FPT Software",
+      "description": "TITLE_IMMERSIVE_DESCRIPTION",
+      "roles": [
+        "ROLE_DEVELOPER"
+      ],
+      "responsibilities": [
+        "Be a back-end & front-end developer.",
+        "Instruct team members to follow project technology."
+      ],
+      "technologies": [
+        "TITLE_ASP_NET_CORE",
+        "TITLE_ENTITY_FRAMEWORK_CORE",
+        "TITLE_ANGULAR_4"
+      ]
+    },
+    {
+      "name": "KCSG",
+      "time": {
+        "from": 1475769600000,
+        "to": 1490976000000
+      },
+      "company": "FPT Software",
+      "description": "TITLE_KCSP_DESCRIPTION",
+      "roles": [
+        "ROLE_DEVELOPER"
+      ],
+      "responsibilities": [
+        "Study source code of the old system built on Power builder.",
+        "Support business analysists to create SRS document.",
+        "Deploy new system on MVC ASP.NET Technology based on the newly created SRS documents.",
+        "Create Q&A list.",
+        "Contact with customers to verify documents.",
+        "Support customer to deploy and use system."
+      ],
+      "technologies": [
+        "TITLE_C_SHARP",
+        "TITLE_ENTITY_FRAMEWORK",
+        "TITLE_SIGNAL_R",
+        "TITLE_ANGULAR_JS"
+      ]
+    },
+    {
+      "name": "Olive",
+      "time": {
+        "from": 1459440000000,
+        "to": 1472659200000
+      },
+      "company": "",
+      "description": "TITLE_OLIVE_DESCRIPTION",
+      "roles": [
+        "ROLE_DEVELOPER"
+      ],
+      "responsibilities": [
+        "Develop back-end service using restful API",
+        "Create system database structure.",
+        "Write unit test functions.",
+        "Draw sequence diagrams, class diagrams, use case diagrams.",
+        "Create API documents."
+      ],
+      "technologies": [
+        "TITLE_SIGNAL_R",
+        "TITLE_C_SHARP",
+        "TITLE_ENTITY_FRAMEWORK",
+        "TITLE_ANGULAR_2"
+      ]
+    },
+    {
+      "name": "DCPS",
+      "time": {
+        "from": 1443628800000,
+        "to": 1459440000000
+      },
+      "company": "FPT Software",
+      "description": "TITLE_DCPS_DESCRIPTION",
+      "roles": [
+        "ROLE_DEVELOPER"
+      ],
+      "responsibilities": [
+        "Create web content using html and javascript",
+        "Consume back-end web service"
+      ],
+      "technologies": [
+        "TITLE_JAVASCRIPT",
+        "TITLE_HTML",
+        "TITLE_ECLIPSE"
+      ]
+    },
+    {
+      "name": "TeamStore",
+      "time": {
+        "from": 1438358400000,
+        "to": 1443628800000
+      },
+      "company": "FPT Software",
+      "description": "TITLE_TEAMSTORE_DESCRIPTION",
+      "roles": [
+        "ROLE_DEVELOPER"
+      ],
+      "responsibilities": [
+        "Create web page contents",
+        "Consume back-end service"
+      ],
+      "technologies": [
+        "TITLE_JAVASCRIPT",
+        "TITLE_JQUERY",
+        "TITLE_HTML"
+      ]
+    },
+    {
+      "name": "TouchInspectionTool",
+      "time": {
+        "from": 1427817600000,
+        "to": 1438358400000
+      },
+      "company": "FPT Software",
+      "description": "TITLE_TOUCH_INSPECTION_TOOL_DESCRIPTION",
+      "roles": [
+        "ROLE_DEVELOPER"
+      ],
+      "responsibilities": [
+        "Design web page contents.",
+        "Design application back-end business.",
+        "From customer requirement, do research and provide deployment solutions"
+      ],
+      "technologies": [
+        "TITLE_JAVASCRIPT",
+        "TITLE_JQUERY",
+        "TITLE_HTML",
+        "TITLE_ASP_NET_MVC_4",
+        "TITLE_BOOTSTRAP_3",
+        "TITLE_INVERSION_OF_CONTROL"
+      ]
+    },
+    {
+      "name": "Kokugo",
+      "time": {
+        "from": 1422720000000,
+        "to": 1427817600000
+      },
+      "company": "FPT Software",
+      "descriptions": "TITLE_KOKUGO_DESCRIPTION",
+      "roles": [
+        "ROLE_DEVELOPER"
+      ],
+      "responsibilities": [
+        "Export .swf file",
+        "Design web content"
+      ],
+      "technologies": [
+        "TITLE_JAVASCRIPT",
+        "TITLE_JQUERY",
+        "TITLE_HTML"
+      ]
+    },
+    {
+      "name": "QNET",
+      "time": {
+        "from": 1414771200000,
+        "to": 1422720000000
+      },
+      "company": "FPT Software",
+      "description": "TITLE_QNET_DESCRIPTION",
+      "roles": [
+        "ROLE_DEVELOPER"
+      ],
+      "responsibilities": [
+        "Design and code UI using WPF",
+        "Create application business",
+        "Write unit test cases"
+      ],
+      "technologies": [
+        "TITLE_INVERSION_OF_CONTROL",
+        "TITLE_WPF",
+        "TITLE_C_SHARP"
       ]
     }
   ]
