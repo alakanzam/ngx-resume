@@ -13,7 +13,7 @@ export const routes: Routes = [
       {
         path: '',
         pathMatch: 'full',
-        redirectTo: '/personal'
+        redirectTo: '/personal/about-me'
       },
       {
         path: 'personal',

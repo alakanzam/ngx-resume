@@ -16,6 +16,7 @@ import {ProjectResolve} from '../../resolves/project.resolve';
 const routes: Routes = [
   {
     path: '',
+    pathMatch: 'prefix',
     component: AuthorizeLayoutComponent,
     canActivate: [IsAuthorizedGuard],
     resolve: {
@@ -26,9 +27,11 @@ const routes: Routes = [
       {
         path: '',
         component: PersonalComponent,
+        pathMatch: 'prefix',
         children: [
           {
             path: '',
+            pathMatch: 'full',
             redirectTo: 'about-me'
           },
           {
