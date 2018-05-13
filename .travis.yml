@@ -23,5 +23,5 @@ script:
 - ng build
 
 after_script:
-- firebase deploy --token $FIREBASE_ACCESS_TOKEN
+- firebase deploy --token "$FIREBASE_ACCESS_TOKEN"
 
