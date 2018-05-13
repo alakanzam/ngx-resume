@@ -12,6 +12,7 @@ import {TechnicalSkillComponent} from './technical-skill/technical-skill.compone
 import {ProgressbarModule} from 'ngx-bootstrap';
 import {TranslateModule} from '@ngx-translate/core';
 import {ProjectComponent} from './project/project.component';
+import {ProjectResolve} from '../../resolves/project.resolve';
 
 //#region Module declaration
 
@@ -39,7 +40,8 @@ import {ProjectComponent} from './project/project.component';
   providers: [
     AboutMeResolve,
     HobbyResolve,
-    SkillResolve
+    SkillResolve,
+    ProjectResolve
   ]
 })
 

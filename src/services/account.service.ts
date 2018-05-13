@@ -6,6 +6,7 @@ import {AboutMe} from '../models/about-me';
 import {ApiUrlConstant} from '../constants/api-url.constant';
 import {Hobby} from '../models/hobby';
 import {Skill} from '../models/skill';
+import {Project} from '../models/project';
 
 @Injectable()
 export class AccountService implements IAccountService {
@@ -55,6 +56,18 @@ export class AccountService implements IAccountService {
         return <Skill[]> x.skills;
       });
 
+  }
+
+  /*
+  * Get technologies.
+  * */
+  getProjects(): Observable<Project[]>{
+    let fullUrl = `${ApiUrlConstant.endPoint}/${ApiUrlConstant.getProjects}`;
+    return this.httpClient.get(fullUrl)
+      .map((x: any) => {
+        console.log(x);
+        return <Project[]> x.projects;
+      })
   }
 
   //#endregion

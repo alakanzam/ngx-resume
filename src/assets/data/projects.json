@@ -90,7 +90,9 @@
         "TITLE_C_SHARP",
         "TITLE_ENTITY_FRAMEWORK",
         "TITLE_SIGNAL_R",
-        "TITLE_ANGULAR_JS"
+        "TITLE_ANGULAR_JS",
+        "TITLE_SOCKET_PROGRAMMING",
+        "TITLE_WPF"
       ]
     },
     {
@@ -112,6 +114,7 @@
         "Create API documents."
       ],
       "technologies": [
+        "TITLE_ASP_NET_WEB_API_2",
         "TITLE_SIGNAL_R",
         "TITLE_C_SHARP",
         "TITLE_ENTITY_FRAMEWORK",
@@ -135,8 +138,7 @@
       ],
       "technologies": [
         "TITLE_JAVASCRIPT",
-        "TITLE_HTML",
-        "TITLE_ECLIPSE"
+        "TITLE_HTML"
       ]
     },
     {

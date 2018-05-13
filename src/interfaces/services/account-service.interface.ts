@@ -3,6 +3,7 @@ import {Observable} from "rxjs/Observable";
 import {AboutMe} from '../../models/about-me';
 import {Hobby} from '../../models/hobby';
 import {Skill} from '../../models/skill';
+import {Project} from '../../models/project';
 
 export interface IAccountService {
 
@@ -22,6 +23,11 @@ export interface IAccountService {
   * Get user skills list.
   * */
   getSkills(): Observable<Skill[]>;
+
+  /*
+  * Get projects list.
+  * */
+  getProjects(): Observable<Project[]>;
 
   //#endregion
 

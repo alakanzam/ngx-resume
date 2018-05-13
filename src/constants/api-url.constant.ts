@@ -22,5 +22,10 @@ export class ApiUrlConstant {
   * */
   public static getSkills: string = 'assets/data/skills.json';
 
+  /*
+  * Get projects.
+  * */
+  public static getProjects: string = 'assets/data/projects.json';
+
   //#endregion
 }

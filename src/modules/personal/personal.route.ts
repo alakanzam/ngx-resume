@@ -9,6 +9,7 @@ import {HobbyResolve} from '../../resolves/hobby.resolve';
 import {TechnicalSkillComponent} from './technical-skill/technical-skill.component';
 import {SkillResolve} from '../../resolves/skill.resolve';
 import {ProjectComponent} from './project/project.component';
+import {ProjectResolve} from '../../resolves/project.resolve';
 
 //#region Route configuration
 
@@ -42,14 +43,17 @@ const routes: Routes = [
             path: 'technical-skill',
             component: TechnicalSkillComponent,
             pathMatch: 'full',
-            resolve:{
+            resolve: {
               technicalSkills: SkillResolve
             }
           },
           {
             path: 'project',
             component: ProjectComponent,
-            pathMatch: 'full'
+            pathMatch: 'full',
+            resolve: {
+              projects: ProjectResolve
+            }
           }
         ]
       },
