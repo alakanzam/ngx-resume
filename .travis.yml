@@ -6,6 +6,10 @@ cache:
  directories:
   - node_modules
 
+global:
+ env:
+ - secure: "Ru0KSgscGAbKFHz5DoyguuyhrGDUhPsXHmNl8puUsodSFdHA+ELBpjakLc77dlQucGC+SZLuFlx8Z2ymdhP9uWM2IoOYjrH+FfgJhmFuWxHVszNit70hytfV6I/Pfg2w5HB/RKyu4i/RFt1bifa6C7VuFenQGCmBaPJZ910B9mSLhV93aKj0bvLBQii3KKgQ/0z4cZA9AlWRVBQvh0KQHz61c11mDq+rFAAMccuEfzkLMwpsaclJGUH481o0sWU6CdUwA4+vQXsTjvCmJi6+klCfOUneSJVUo/BlJhg30BrZYKr5Nvoo5gkyu9dX9E8apasTNA1G9DTFACuTCvLhcED3t4SWIyIbGubp3erpMzClmFk6JIbclZjAe1mS9dUSTM1DhDZw41pcJU4Nn1XIvGc0Yfeg3TPKlqq1xFrXMblwOzCHnEsflhwkdB9XV0JWtrrGlElnMqO5t7dDu/Fv4DeLHvj7aQA22d2WH6R/ijpv2IF0pMybTYKLoy4rZn25fuwFk1DTzjB73oVbB1r4rsLyvUTyBkB1mXDpRb67ocavydKN2vnl1Diw59DiPZXtrHVSE9RqQKQcc6KdRobEWPLuZvn9pcO/7A7qYMIupxXFH5MNc5r7bAGLq3D0XVXTvoYxsWRcc/kEUuWMjGBrIwNO0UNORdIcR0oXhAxjISE="
+  
 # Dependency installation phrase.
 install:
 - npm install
@@ -18,11 +22,6 @@ before_script:
 script:
 - ng build
 
-# Deployment phrase
-deploy:
-  provider: firebase
-  token:
-    secure: "BgH+Zxn7Q8nrYSdjAsnogywrRe31KZTSVDF4J28O2TrngZI7KGjnwKrO2yChQ8OyV17r+WIlYO/zaDl4dyfJztViTr3al+IjJ5z2kSOO4zWluZ8P3gh/lf0kCGa1JFI+oWSs8/jDbxv5AVFzHzKKUP280CW/tGoGOuTX8th6ZmtAQUNZEVYdjqYksP6bddBGWrt4vXbF24Mru2MbELrFL/Awkri1wuDUl+NK1neE1BzRCwgVDQmVrc9RWtqZIUNGgMCyLkPqgXBoNUFaynHqxGwo8RTSJjK9gmm98UuHBWEk6W4eLo+WGiFucEEE9jpKQ8ZXfAWU7fAmGM1QjDa/Xu8GEFxI1hurE+mPDHCwDzfSvRGydC2E4vk6v4qdMMGWL7bP/Y8ZdXOXcAO/oyRp8glJ6XTkkCOgGb9RdkUdfVziV6zJ52qthk5c1WlMbYQREkvifDhbmAn1ErGt7cd6NCEfKtp9+84mRv0+WclvRNIvxY7FDYV7ahuZxar9cZwipo5TaL2dZFqQgXLRzMyCg39UfQjRoiIWO+3L6V3TfJWlcwEmhwU3F1HxkfP5dpRXQimoB5nvOkzqp609zEr5gxak02DHc6/xihBQYQfBQifno7SIYbHhvJNJgTyyi/7oizLbYo5yKyWS/Sr/BUqqskGEa87dTDodncykpmOpR08="
-  project: "ngx-resume"
-  on: 
-   branch: "angular.5-migration"
+after_script:
+- firebase deploy --token $FIREBASE_ACCESS_TOKEN
+
