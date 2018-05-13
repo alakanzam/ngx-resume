@@ -6,10 +6,10 @@ cache:
  directories:
   - node_modules
 
-global:
- env:
+env:
+ global:
  - secure: "Ru0KSgscGAbKFHz5DoyguuyhrGDUhPsXHmNl8puUsodSFdHA+ELBpjakLc77dlQucGC+SZLuFlx8Z2ymdhP9uWM2IoOYjrH+FfgJhmFuWxHVszNit70hytfV6I/Pfg2w5HB/RKyu4i/RFt1bifa6C7VuFenQGCmBaPJZ910B9mSLhV93aKj0bvLBQii3KKgQ/0z4cZA9AlWRVBQvh0KQHz61c11mDq+rFAAMccuEfzkLMwpsaclJGUH481o0sWU6CdUwA4+vQXsTjvCmJi6+klCfOUneSJVUo/BlJhg30BrZYKr5Nvoo5gkyu9dX9E8apasTNA1G9DTFACuTCvLhcED3t4SWIyIbGubp3erpMzClmFk6JIbclZjAe1mS9dUSTM1DhDZw41pcJU4Nn1XIvGc0Yfeg3TPKlqq1xFrXMblwOzCHnEsflhwkdB9XV0JWtrrGlElnMqO5t7dDu/Fv4DeLHvj7aQA22d2WH6R/ijpv2IF0pMybTYKLoy4rZn25fuwFk1DTzjB73oVbB1r4rsLyvUTyBkB1mXDpRb67ocavydKN2vnl1Diw59DiPZXtrHVSE9RqQKQcc6KdRobEWPLuZvn9pcO/7A7qYMIupxXFH5MNc5r7bAGLq3D0XVXTvoYxsWRcc/kEUuWMjGBrIwNO0UNORdIcR0oXhAxjISE="
-  
+
 # Dependency installation phrase.
 install:
 - npm install
@@ -17,11 +17,11 @@ install:
 before_script:
 - npm install -g firebase-tools
 - npm install -g @angular/cli
-  
+
 # Build phrase
 script:
 - ng build
 
 after_script:
-- firebase deploy --token "$FIREBASE_ACCESS_TOKEN"
+- firebase deploy --token $FIREBASE_ACCESS_TOKEN
 
