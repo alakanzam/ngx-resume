@@ -194,7 +194,7 @@
         "to": 1427817600000
       },
       "company": "FPT Software",
-      "descriptions": "TITLE_KOKUGO_DESCRIPTION",
+      "description": "TITLE_KOKUGO_DESCRIPTION",
       "roles": [
         "ROLE_DEVELOPER"
       ],

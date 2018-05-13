@@ -50,5 +50,11 @@
   "TITLE_VINCI_DESCRIPTION": "The project consists of a <code>web application</code> & <code>mobile application</code>, which allows user to manage their infrastructure. Project helps mobile devices to do synchronization with web application.",
   "TITLE_POINT_DESCRIPTION": "A web system made of <code>AngularJS</code> and Web API 2. It helps user to manage their staffs' tasks.",
   "TITLE_IMMERSIVE_DESCRIPTION": "Project uses <code>ASP.NET Core</code> as its back-end service and <code>Angular 2</code> as its front-end. Back-end services collect data from databases and external services and pass data to client to display.",
-  "TITLE_KCSP_DESCRIPTION": "A website helps user to manage their products in warehouse. It interacts with barcode scanner to read product data, it also send data to an external system by using <code>TCP</code> connection."
+  "TITLE_KCSP_DESCRIPTION": "A website helps user to manage their products in warehouse. It interacts with barcode scanner to read product data, it also send data to an external system by using <code>TCP</code> connection.",
+  "TITLE_QNET_DESCRIPTION": "A <code>desktop application</code> which helps users to encrypt their data on their machine. It connects to a <code>Windows Service<code> to run in background mode.",
+  "TITLE_KOKUGO_DESCRIPTION": "Make contents which are used by students and run on <code>tablets</code>, <code>phones</code>. Contents are run on multi browsers.",
+  "TITLE_TOUCH_INSPECTION_TOOL_DESCRIPTION": "A website that allows users to import images and do inspection later. It allows bulk insert operation.",
+  "TITLE_TEAMSTORE_DESCRIPTION": "A website about store management. It is developed base on INTARFRM framework.",
+  "TITLE_OLIVE_DESCRIPTION": "The project is separated into 2 API layers and 2 Front-end layers. The system connects doctors and patients as a network, helps doctors to monitor their patient's measurement.",
+  "TITLE_DCPS_DESCRIPTION": "Project is about insurance management system."
 }
