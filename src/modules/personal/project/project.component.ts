@@ -14,6 +14,9 @@ export class ProjectComponent implements OnInit{
   // Projects list.
   private projects: Array<Project>;
 
+
+  private bIsPanelCollapse: any;
+
   //#endregion
 
   //#region Constructor
@@ -22,7 +25,7 @@ export class ProjectComponent implements OnInit{
   * Initialize component with injectors.
   * */
   public constructor(public activatedRoute: ActivatedRoute){
-
+    this.bIsPanelCollapse = {};
   }
 
   //#endregion

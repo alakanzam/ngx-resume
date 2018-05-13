@@ -5,10 +5,14 @@
       <div class="panel-heading">
         <b>{{project.name}}</b>
         <div class="pull-right">
-          <span class="glyphicon glyphicon-plus"></span>
+          <span class="glyphicon glyphicon-plus"
+                [class.glyphicon-plus]="bIsPanelCollapse[project.name]"
+                [class.glyphicon-minus]="!bIsPanelCollapse[project.name]"
+                (click)="bIsPanelCollapse[project.name] = !bIsPanelCollapse[project.name]"></span>
         </div>
       </div>
-      <div class="panel-body">
+      <div class="panel-body"
+           [class.collapse]="bIsPanelCollapse[project.name]">
         <table class="table table-responsive table-condensed">
           <tbody>
           <tr>
